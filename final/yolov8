@@ -1,0 +1,15 @@
+from ultralytics import YOLO
+
+# Load YOLO model
+model = YOLO('yolov8n-pose.pt')
+
+# Train model with explicit settings
+results = model.train(
+    data='/home/cheeth/Downloads/yolov8_version/final/data.yaml',
+    epochs=100,  # Increase epochs
+    imgsz=640,
+    project='/home/cheeth/Downloads/yolov8_version/output',  # Explicit output path
+    name='test_training',  # Name of the run
+    save=True,  # Force saving
+    save_period=1  # Save weights every epoch
+)

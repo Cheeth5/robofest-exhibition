@@ -1,0 +1,16 @@
+train: /home/cheeth/Downloads/yolov8_version/final/train/images
+val: /home/cheeth/Downloads/yolov8_version/final/valid/images
+test: /home/cheeth/Downloads/yolov8_version/final/test/images
+
+kpt_shape: [13, 3]
+flip_idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+nc: 1
+names: ['throwing']
+
+roboflow:
+  workspace: cheeth
+  project: throwing-bottles
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/cheeth/throwing-bottles/dataset/2
